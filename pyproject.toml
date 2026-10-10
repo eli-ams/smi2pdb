@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smi2pdb"
+dynamic = ["version"]
+description = "Build molecular PDB systems from SMILES with Sobol packing and steric clash rejection."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [
+  {name = "Eli I. Assaf", email = "e.i.assaf@tudelft.nl"},
+  {name = "Xueyan Liu"},
+  {name = "Peng Lin"},
+  {name = "Sandra Erkens"},
+]
+dependencies = ["numpy", "rdkit"]
+keywords = ["SMILES", "PDB", "molecular dynamics", "packing", "chemistry"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Chemistry",
+]
+
+[project.urls]
+Homepage = "https://github.com/eli-ams/smi2pdb"
+Repository = "https://github.com/eli-ams/smi2pdb"
+Issues = "https://github.com/eli-ams/smi2pdb/issues"
+
+[project.scripts]
+smi2pdb = "smi2pdb.cli:main"
+
+[project.optional-dependencies]
+release = ["build", "twine"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["smi2pdb*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "smi2pdb.__version__"}

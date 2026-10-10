@@ -1,0 +1,3 @@
+include README.md LICENSE CHANGELOG.md inputs.py run_smi2pdb.py
+recursive-include readme_resources *.png
+recursive-include tests *.py
