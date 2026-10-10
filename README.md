@@ -10,7 +10,7 @@ and exports the complete system as a PDB file.
 Version **2.0.0** introduces incremental steric clash rejection, density search,
 and multicore packing for efficient preparation of organic mixtures.
 
-![smi2pdb 2.0.0 workflow: molecular definitions, conformer generation, density selection, incremental Sobol packing, parallel attempts, optional density search, and PDB export](https://raw.githubusercontent.com/eli-ams/smi2pdb/master/readme_resources/workflow_2_0.png)
+![smi2pdb 2.0.0 workflow: molecular definitions, conformer generation, density selection, incremental Sobol packing, parallel attempts, optional density search, and PDB export](https://raw.githubusercontent.com/eli-ams/smi2pdb/release/2.0.0/readme_resources/workflow_2_0.png)
 
 *The smi2pdb 2.0.0 workflow. Molecular illustrations and density-search values are schematic.*
 
@@ -170,7 +170,7 @@ Packing produces initial coordinates for subsequent force-field assignment,
 minimization, and equilibration. The density-search result is the highest density
 found under the selected geometry, clash criterion, and search budget.
 
-![Example molecular system visualized in OVITO](https://raw.githubusercontent.com/eli-ams/smi2pdb/master/readme_resources/mixture_ortho.png)
+![Example molecular system visualized in OVITO](https://raw.githubusercontent.com/eli-ams/smi2pdb/release/2.0.0/readme_resources/mixture_ortho.png)
 
 *Example molecular system from the project's original illustrations, visualized in OVITO.*
 
