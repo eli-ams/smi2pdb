@@ -1,5 +1,11 @@
 # smi2pdb
 
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![NumPy](https://img.shields.io/badge/arrays-NumPy-013243?logo=numpy&logoColor=white)](https://numpy.org/)
+[![RDKit](https://img.shields.io/badge/chemistry-RDKit-00897B)](https://www.rdkit.org/)
+[![Version 2.0.0](https://img.shields.io/badge/version-2.0.0-00A6A6)](https://github.com/eli-ams/smi2pdb/tree/release/2.0.0)
+[![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-007EC6)](https://github.com/eli-ams/smi2pdb/blob/release/2.0.0/LICENSE)
+
 **From SMILES strings to packed molecular systems.**
 
 smi2pdb is a Python tool for preparing molecular configurations for atomistic
